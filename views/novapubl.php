@@ -17,16 +17,16 @@
     <!-- pagina de cadastro de publicacao -->
     <main class="board">
         <h1> Cadastro de novo Post </h1>
-        <form action="/DH_Desafio_Instagram/cadastrar-publ" method="POST" enctype="multipart/form-data"> 
-            <div class="form-group">
-                <label for="imgPubl">Example file input</label>
+        <form action="/DH_Desafio_Instagram/cadastro-publicacao" method="POST" enctype="multipart/form-data"> 
+            <div class="form-group mt-5">
+                <label for="imgPubl" class="font-weight-bold">Selecione um arquivo de imagem:</label>
                 <input type="file" class="form-control-file" name="imagem" id="imgPubl">
             </div>
             <div class="form-group">
-                <label for="descricao">Descrição</label>
+                <label for="descricao" class="font-weight-bold">Descrição:</label>
                 <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Insira uma descrição">
             </div>
-            <button type="submit" class="btn btn-success">Postar</button>
+            <button type="submit" class="btn btn-primary">Postar</button>
         </form>
 
     </main>
