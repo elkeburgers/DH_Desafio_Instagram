@@ -1,3 +1,11 @@
+<?php   
+
+    $posts = $_REQUEST['posts'];
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,16 +24,20 @@
     <!-- pagina de visualizacao de publicacoes -->
     <main class="board">
    
+   <!-- problemas para retornar as publicacoes, provavelmente nas variaveis do foreach -->
+    <?php foreach($posts as $post): ?>
         <div class="card mt-5">
-            <img id="publimg" src="views/img/teste.png" alt="Foto">
+            <img id="cardimg" src="<?php echo $post->imagem; ?>" alt="Foto">
             <div class="card-body">
                 <p class="card-text">
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate excepturi est impedit quidem. Voluptate quia temporibus id culpa perferendis tenetur voluptatem fugit, voluptas minima, rerum vel mollitia accusantium ipsum? Voluptatum.   
+                   <?php echo $post->descricao; ?>
                 </p>
             </div>
         </div>
+    <?php endforeach; ?>
       
-        <a class="float-button" href="/instagran/formulario-post">&#10010;</a>
+        <!-- botao flutuante para cadstrar novas publicacacoes -->
+        <a class="float-button" href="/DH_Desafio_Instagram/formulario-publicacao">&#10010;</a>
     </main>
     
 <!-- links de javascript -->

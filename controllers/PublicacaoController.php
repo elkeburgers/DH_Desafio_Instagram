@@ -8,7 +8,7 @@ class PublicacaoController{
     public function acao($rotas){
         switch($rotas){
             case 'publicacoes':
-                $this->verPubli();
+                $this->verPublicacao();
             break;
 
             case 'formulario-publicacao':
@@ -22,18 +22,21 @@ class PublicacaoController{
     }
 
     // metodos para acoes no banco de dados
-    private function verPubli(){
+
+    // metodo para ver as publicacoes na view publicacao
+    private function verPublicacao(){
         $publicacao = new Publicacoes();
-        $verPubli = $publicacao->verPublicacao();
-        $_REQUEST['posts'] = $verPubli;
+        $vejaPubli = $publicacao->verPublicacao();
+        $_REQUEST['posts'] = $vejaPubli;
         include "views/publicacao.php";
     }
 
+    // metodo  para ver o formulario da view novapubl
     private function formPubli(){
         include "views/novapubl.php";
     }
 
-    // metodo para o botao de cadastro de publicacao
+    // metodo para o botao de cadastro de publicacao na view novapubl
     private function cadastroPublicacao(){
         $descricao = $_POST['descricao'];
         $nomeArquivo = $_FILES['imagem']['name'];
