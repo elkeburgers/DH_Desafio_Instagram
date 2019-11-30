@@ -55,3 +55,8 @@ header {
 #cardimg {
     max-width: 100%;
 }
+
+/* corrigir posicao de logo nas paginas de login e cadastro do usuario */
+.logo{
+    align: center;
+}

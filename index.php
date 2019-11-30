@@ -47,6 +47,12 @@ $rotas = key($_GET)?key($_GET):"publicacoes";
         $controller = new UsuarioController();
         $controller->acao($rotas);
         break;
+
+    case 'sair':
+        include "controllers/UsuarioController.php";
+        $controller = new UsuarioController();
+        $controller->acao($rotas);
+        break;
     } 
 
 ?>
