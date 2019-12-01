@@ -22,7 +22,8 @@
                 <div>
                     <img class="logo" width="90" src="views/img/logo.png" alt="Logo Instagram">
                     <br><br>
-                    <p class="font-weight-bold text-black-50 text-center ">Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
+                    <p class="font-weight-bold text-black-50 text-center ">Cadastre-se para ver fotos e vídeos dos seus
+                        amigos.</p>
                     <!-- <p class="font-weight-bold text-black-50 text-center">videos dos seus amigos.</p> -->
                 </div><br>
 
@@ -34,13 +35,17 @@
                     <input type="password" name="senha" id="senha" class="form-control" required placeholder="Senha">
                 </div>
                 <div class="form-group">
-                    <input type="password" name="nome" id="nome" class="form-control" required
+                    <input type="text" name="nome" id="nome" class="form-control" required
                         placeholder="Nome completo">
                 </div>
                 <div class="form-group">
                     <input type="email" name="email" id="email" class="form-control" required
                         placeholder="E-mail válido">
                 </div>
+                <!-- <div class="form-group mt-5">
+                    <label for="img_perfil">Carregue foto de perfil:</label>
+                    <input type="file" class="form-control-file" name="img_perfil" id="img_perfil">
+                </div> -->
 
                 <!-- botao de cadastro -->
                 <div class="form-group text-center">
@@ -49,7 +54,8 @@
 
                 <!-- termos e politicas -->
                 <div>
-                    <p class="font-weight-bold text-black-50 text-center">Ao se cadastrar, você concorda com nossos Termos,Política de Dados e Política de Cookies.</p>
+                    <p class="font-weight-bold text-black-50 text-center">Ao se cadastrar, você concorda com nossos
+                        Termos,Política de Dados e Política de Cookies.</p>
                     <!-- <p class="font-weight-bold text-black-50 text-center">Ao se cadastrar, você concorda com </p>
                     <p class="font-weight-bold text-black-50 text-center">nossos Termos, Politica de Dados e</p>
                     <p class="font-weight-bold text-black-50 text-center">Politica de Cookies.</p> -->
