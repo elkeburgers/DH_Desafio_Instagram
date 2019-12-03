@@ -28,6 +28,9 @@
         <div class="card mt-5">
             <img id="cardimg" src="<?php echo $post->imagem; ?>" alt="Foto">
             <div class="card-body">
+                 <p class="font-weight-bold">
+                 <?php echo $post->nome; ?>
+                </p>
                 <p class="card-text">
                    <?php echo $post->descricao; ?>
                 </p>
