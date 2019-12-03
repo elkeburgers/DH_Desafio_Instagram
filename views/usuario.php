@@ -28,24 +28,16 @@
                 </div><br>
 
                 <div class="form-group">
-                    <input type="text" name="login" id="login" class="form-control" required
-                        placeholder="Nome de usuário">
+                    <input type="text" name="nome" id="nome" class="form-control" required
+                        placeholder="Nome completo">
                 </div>
                 <div class="form-group">
                     <input type="password" name="senha" id="senha" class="form-control" required placeholder="Senha">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="nome" id="nome" class="form-control" required
-                        placeholder="Nome completo">
-                </div>
-                <div class="form-group">
                     <input type="email" name="email" id="email" class="form-control" required
                         placeholder="E-mail válido">
                 </div>
-                <!-- <div class="form-group mt-5">
-                    <label for="img_perfil">Carregue foto de perfil:</label>
-                    <input type="file" class="form-control-file" name="img_perfil" id="img_perfil">
-                </div> -->
 
                 <!-- botao de cadastro -->
                 <div class="form-group text-center">

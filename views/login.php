@@ -1,30 +1,3 @@
-<?php 
-// a senha foi criada no phpteste.net usando password_hash e var_dump para copiar a codificação abaixo. Senha original 123, e precisa sempre estar com aspas simples porque o PHP pode entender as aspas duplas como parte da codificação dele.
-// $usuario = ["login"=>"elke.burgers@hotmail.com", "senha"=>'$2y$10$P.oFdVvoZvS5LRx/8CQibuYYDh3hbYvJpKhWvDg.b0071NoyJ/666'];
-
-if($_POST){
-    $login = $_POST["login"];
-    $senha = $_POST["senha"];
-    // validando login
-    if($login == $usuario["login"]){
-        // validando a senha
-        if(password_verify($senha, $usuario["senha"])){
-            
-            // para iniciar a sessão de login e colocar o nome dele (depois trocamos o nome para puxar direto do banco de dados)
-            session_start();
-            $_SESSION["usuario"] = ["nome"=>"Elke"];
-
-            header("Location: publicacao.php");
-        }else{
-            echo "E-mail ou senha inválidos.";
-        }
-    }else{
-        echo "E-mail ou senha inválidos.";
-    }
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +23,7 @@ if($_POST){
             </div><br><br>
 
             <div class="form-group">
-                <input type="text" name="login" id="login" class="form-control" required placeholder="Coloque seu login">
+                <input type="text" name="nome" id="nome" class="form-control" required placeholder="Coloque seu nome">
             </div>
             <div class="form-group">
                 <input type="password" name="senha" id="senha" class="form-control" required placeholder="Senha">

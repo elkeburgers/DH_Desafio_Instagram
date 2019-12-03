@@ -1,6 +1,7 @@
 <?php
 
 include_once "models/Publicacoes.php";
+session_start();
 
 class PublicacaoController{
 
@@ -44,9 +45,13 @@ class PublicacaoController{
         $caminhoSalvar = "views/img/$nomeArquivo";
 
         move_uploaded_file($linkTemp, $caminhoSalvar);
+        // var_dump ($_SESSION["usuario"]);
+        // exit;
 
         $publicacao = new Publicacoes();
-        $id_usuario = 1;
+        $id_usuario = $_SESSION['usuario']->id;
+        // var_dump($_SESSION['usuario']);
+        // exit;
         $resultado = $publicacao->criarPublicacao($caminhoSalvar, $descricao, $id_usuario);
 
         if($resultado){
